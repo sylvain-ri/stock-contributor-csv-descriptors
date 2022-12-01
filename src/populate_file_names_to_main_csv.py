@@ -30,7 +30,7 @@ def main(folder: Path, path_output: Path):
 
     # Create the CSV
     n = 0
-    with open(path_output, "w") as out_csv:
+    with open(path_output, "w", newline='') as out_csv:
         output_writer = csv.writer(out_csv)
 
         # Write the default column headers
