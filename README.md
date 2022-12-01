@@ -11,7 +11,7 @@ Create a venv before if desired.
 
 # Run
 To get the initial CSV for your files:
-`generate-csv <folder_with_media> <output_csv>`
+`generate-master-csv <folder_with_media> <output_csv>`
 
 `stock_contributor_csv_descriptors <descriptor_file.csv> <output_folder/basename_without.csv> -d <folder_with_media>` <br />
 The optional argument `-d` also checks that the filenames correspond to the one in the CSV file.
