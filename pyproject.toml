@@ -1,5 +1,5 @@
 [project]
-name = "stock-contributor-csv-descriptors-parser"
+name = "stock_contributor_csv_descriptors"
 version = "0.1.0"
 authors = [
   { name="Sylvain Riondet", email="sylvainriondet@gmail.com" },
@@ -7,6 +7,7 @@ authors = [
 description = "Output a CSV file for each selected stock website (such as Adobe Stock, Shutterstock, ...)"
 readme = "README.md"
 requires-python = ">=3.7"
+dependencies = ["filetype", ]
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: GNU GPLv3",
@@ -14,4 +15,14 @@ classifiers = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/sylvain-ri/stock-contributor-csv-descriptors-parser"
+"Homepage" = "https://github.com/sylvain-ri/stock-contributor-csv-descriptors"
+[build-system]
+requires = ["setuptools>=56.0", "wheel"]
+build-backend = "setuptools.build_meta"
+[tool.setuptools]
+include-package-data = true
+[tool.setuptools.packages]
+find = {}  # Scan the project directory with the default parameters
+
+[project.scripts]
+generate-csv = "stock_contributor_csv_descriptors.populate_file_names_to_main_csv:cli"
