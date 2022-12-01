@@ -8,8 +8,8 @@ from datetime import datetime as dt
 from pathlib import Path
 import filetype
 
-DEFAULT_MAIN_CSV = f"{dt.now():%Y-%m-%d_%H-%M}_descriptor.csv"
-PATH_CSV_TEMPLATE = "../../CSV_Samples/template.csv"
+DEFAULT_MAIN_CSV = f"{dt.now():%Y-%m-%d_%H-%M}_Descriptor-Master.csv"
+PATH_CSV_TEMPLATE = "../../CSV_Samples/MasterTemplate.csv"
 
 
 def main(folder: Path, path_output: Path):
