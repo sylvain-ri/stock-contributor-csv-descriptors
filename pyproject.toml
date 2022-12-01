@@ -25,4 +25,4 @@ include-package-data = true
 find = {}  # Scan the project directory with the default parameters
 
 [project.scripts]
-generate-csv = "stock_contributor_csv_descriptors.populate_file_names_to_main_csv:cli"
+generate-csv = "src.populate_file_names_to_main_csv:cli"
