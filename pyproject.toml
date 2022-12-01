@@ -1,6 +1,6 @@
 [project]
 name = "stock_contributor_csv_descriptors"
-version = "0.1.0"
+version = "0.1.1"
 authors = [
   { name="Sylvain Riondet", email="sylvainriondet@gmail.com" },
 ]
@@ -10,7 +10,7 @@ requires-python = ">=3.7"
 dependencies = ["filetype", ]
 classifiers = [
     "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: GNU GPLv3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
     "Operating System :: OS Independent",
 ]
 
@@ -25,4 +25,4 @@ include-package-data = true
 find = {}  # Scan the project directory with the default parameters
 
 [project.scripts]
-generate-csv = "src.populate_file_names_to_main_csv:cli"
+generate-csv = "src.stock_contributor_csv_descriptors.populate_file_names_to_main_csv:cli"

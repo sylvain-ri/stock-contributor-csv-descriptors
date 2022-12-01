@@ -9,7 +9,7 @@ from pathlib import Path
 import filetype
 
 DEFAULT_MAIN_CSV = f"{dt.now():%Y-%m-%d_%H-%M}_descriptor.csv"
-PATH_CSV_TEMPLATE = "../CSV_Samples/template.csv"
+PATH_CSV_TEMPLATE = "../../CSV_Samples/template.csv"
 
 
 def main(folder: Path, path_output: Path):
