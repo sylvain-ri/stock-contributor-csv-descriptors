@@ -55,9 +55,9 @@ def is_dir_path(path: str) -> str:
 def cli():
     """ Parse the arguments """
     parser = ArgumentParser(__doc__)
-    parser.add_argument("-f", "--folder", help="Folder to scan for images/videos",
+    parser.add_argument("-f", "--folder", help="Folder to scan for images/videos (default: %(default)s)",
                         default=Path.cwd(), type=is_dir_path)
-    parser.add_argument("-o", "--output", help="Output path for the CSV file",
+    parser.add_argument("-o", "--output", help="Output path for the CSV file (default: %(default)s)",
                         default=Path.cwd() / DEFAULT_MAIN_CSV, type=str)
 
     args = parser.parse_args()
