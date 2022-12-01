@@ -1,0 +1,8 @@
+originalfilename,title,description,keywords,city,region,country,location,specifysource,modelreleased,propertyreleased,release,copyright,setpriceforme,price,pricelarge
+"Original clip filename with corresponding extension.
+(example: clip123.mov)",Title of your clip that will appear on Pond5. The character limit is 80.,Description of your clip that will appear on Pond5. The character limit is 2000.,Keywords for your clip. You can use up to 50 keywords. They must be seperated by commas.,,,,"city, region, country
+",free text - camera model or software,yes/no,yes/no,"If you have a release fill out exact filenames with extensions seperated by commas
+(example: johnrelease.jpg, janerelease.jpg, childrelease.jpg)","Photographer's credit, company name, etc.",Write 1 if you wish for us to set price for you.,"$5 ≥ photos
+$25 ≥ HD
+$50 ≥ 4k",Downconverted price for HD files when original is 4k.
+,,,,optional,optional,optional but highly recommended,optional but highly recommended,optional,optional,optional,,optional,optional,optional,optional
