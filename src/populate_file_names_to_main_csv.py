@@ -51,7 +51,8 @@ def is_dir_path(path: str) -> str:
         raise NotADirectoryError(path)
 
 
-if __name__ == '__main__':
+def cli():
+    """ Parse the arguments """
     parser = ArgumentParser(__doc__)
     parser.add_argument("-f", "--folder", help="Folder to scan for images/videos",
                         default=Path.cwd(), type=is_dir_path)
@@ -60,3 +61,7 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
     main(Path(args.folder), Path(args.output))
+
+
+if __name__ == '__main__':
+    cli()
