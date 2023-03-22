@@ -1,15 +1,15 @@
-""" Scan a folder for image/video files, and create a CSV file with
-    the filenames and the column headers
 """
+Scan a folder for image/video files, and create a CSV file with
+the filenames and the column headers
+"""
+
 import csv
 import pkgutil
 from argparse import ArgumentParser
-from datetime import datetime as dt
 from pathlib import Path
 import filetype
 
-DEFAULT_MAIN_CSV = f"{dt.now():%Y-%m-%d_%H-%M}_Descriptor-Master.csv"
-PATH_CSV_TEMPLATE = "../../CSV_Samples/MasterTemplate.csv"
+from src.stock_contributor_csv_descriptors.common import is_dir_path, DEFAULT_MAIN_CSV, PATH_CSV_TEMPLATE
 
 
 def main(folder: Path, path_output: Path):
@@ -42,14 +42,6 @@ def main(folder: Path, path_output: Path):
             n += 1
 
     print(f"Done. File with {n} filenames written at: {path_output}")
-
-
-def is_dir_path(path: str) -> str:
-    """ check that a path is a valid directory """
-    if Path.is_dir(Path(path)):
-        return path
-    else:
-        raise NotADirectoryError(path)
 
 
 def cli():
