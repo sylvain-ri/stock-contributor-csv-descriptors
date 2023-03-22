@@ -2,7 +2,7 @@
 Output a CSV file for each selected stock website (such as Adobe Stock, Shutterstock, ...), for photo or video descriptions.
 
 Most websites accept a CSV files instead of manually enter each field for each uploaded file.
-Nevertheless their format differs slightly, and this script tries to output one csv file for each supported website.
+Nevertheless, their format differs slightly (title, description, keywords, tags, their length and number), and this script tries to output one csv file for each supported website.
 
 
 # Installation
